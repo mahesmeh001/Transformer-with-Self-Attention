@@ -6,11 +6,11 @@ from torch.nn.utils.rnn import pad_sequence
 import os
 import argparse
 
-from CSE256_PA2_FA24.PA2_code.alibiattention import AliBiTransformerEncoder
-from CSE256_PA2_FA24.PA2_code.decoder import TransformerDecoder, pretrain_decoder
+from CSE256_PA2_FA24.alibiattention import AliBiTransformerEncoder
+from CSE256_PA2_FA24.decoder import TransformerDecoder, pretrain_decoder
 from CSE256_PA2_FA24.feedforwardclassifier import FeedForwardClassifier
-from CSE256_PA2_FA24.PA2_code.transformer import TransformerEncoder
-from CSE256_PA2_FA24.PA2_code.utilities import Utilities
+from CSE256_PA2_FA24.transformer import TransformerEncoder
+from CSE256_PA2_FA24.utilities import Utilities
 from tokenizer import SimpleTokenizer
 from dataset import SpeechesClassificationDataset, LanguageModelingDataset
 
@@ -249,7 +249,7 @@ def main():
         # pretrained_decoder = pretrain_decoder(decoder, train_LM_loader, criterion, optimizer, device)
 
         utils = Utilities(tokenizer, decoder)
-        # utils.sanity_check("This is a test sentence", block_size=32)
+        utils.sanity_check("This is a much longer, and perhaps unnecessarily verbose test sentence, designed to show the capabilities of the attention mechanism", block_size=32)
 
         training_perplexities = []
         obama_perplexities = []

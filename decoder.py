@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import math
 
-from CSE256_PA2_FA24.PA2_code.utilities import Utilities
+from CSE256_PA2_FA24.utilities import Utilities
 
 import torch
 import torch.nn as nn
