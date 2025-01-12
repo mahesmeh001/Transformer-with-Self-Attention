@@ -1,31 +1,31 @@
-## Where is the Report
+## Want a high-level summary?
 
-[Report](PA2 Report.pdf)
+Click Here: [Report](REPORT.pdf)
 
 ## How to Run Code
 
 Note that all parameters are configurable in the main script.
 
-### Question 1
+### Part 1 - Encoder trained with classifier
 
-To run question 1, use the following command:
+Evaluation of a NN Classifier using the Transformer model:
 
 ```
 python main.py --part part3
 ```
 
-### Question 2
+### Part 2 - Pretraining decoder language model
 
-To run question 2, use the following command:
+Decoder: Evaluating prediction tasks using decoder with self-attention mechanism
 
 ```
 python main.py --part part2
 ```
 
 
-### Question 3
+### Part 3 - Experimentation with Alibi Encodings
 
-To run question 3, use the following command:
+To run part 3:
 
 ```
 python main.py --part part3
